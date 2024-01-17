@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+/* Nav bar links */
+a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Nav bar */
+.nav_bar {
+    overflow: hidden;
+    background-color: #010203;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top:34px;
+}
+/* Nav bar logo */
+.nav_bar img {
+    margin-top: -27px;
+    height: 130%;
+}
+
+.slideshow {
+    margin-top: 0;
+}
+
+/* Slideshow container
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+}
+*/
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Number text (1/4) */
+.number_text {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .77}
+    to {opacity: 1}
+}
