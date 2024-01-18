@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Balti Mängud 2024</title>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-    <link rel="stylesheet" href="style2.css" type="text/css"/>
-    <link rel="stylesheet" href="style3.css" type="text/css"/>
-    <link type="text/javascript" href="showAgenda.js" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/style2.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/style3.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/style4.css" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -63,44 +63,38 @@
     <div class="index">
         <div class="div">
             <div class="sports-cubes">
-                <div class="basketball" id="basketball">
+                <div class="basketball sport_box" id="basketball">
                     <div class="text-wrapper-2">Basketball</div>
                 </div>
-                <div class="volleyball" id="volleyball">
+                <div class="volleyball sport_box" id="volleyball">
                     <div class="text-wrapper-3">Volleyball</div>
                 </div>
-                <div class="table-tennis" id="table-tennis">
+                <div class="table-tennis sport_box" id="table-tennis">
                     <div class="text-wrapper-4">Table tennis</div>
                 </div>
-                <div class="school-leaders" id="school-leaders">
-                    <div class="school-leaders-2">School leaders&#39; triathlon</div>
+                <div class="school-leaders sport_box" id="school-leaders">
+                    <div class="school-leaders-2">School leaders' triathlon</div>
                 </div>
             </div>
         </div>
     </div>
 
     <div id="agenda">
-        <h1>Agenda</h1>
+        <h1 class="heading--text">AGENDA</h1>
         <div id="agenda_box">
             <div id="agenda_days">
                 <ul>
-                    <li id="day_1" class="day_button">
-                        <button>
-                            <h2>1st Day</h2>
-                            <p>April 25, 2024</p>
-                        </button>
+                    <li id="day_1" class="day_button active">
+                        <h2>1st Day</h2>
+                        <p>April 25, 2024</p>
                     </li>
                     <li id="day_2" class="day_button">
-                        <button onclick="show2ndDay()" type="button">
-                            <h2>2nd Day</h2>
-                            <p>April 26, 2024</p>
-                        </button>
+                        <h2>2nd Day</h2>
+                        <p>April 26, 2024</p>
                     </li>
                     <li id="day_3" class="day_button">
-                        <button>
-                            <h2>3rd Day</h2>
-                            <p>April 27, 2024</p>
-                        </button>
+                        <h2>3rd Day</h2>
+                        <p>April 27, 2024</p>
                     </li>
                 </ul>
             </div>
@@ -217,7 +211,46 @@
                 <a href="https://ekksl.ee/baltimangud/ajaluguhistory/" target="_blank" class="link">Read more</a>
             </div>
         </div>
-        <div/>
+    </div>
+
+    <div id="contact" class="footer_box">
+        <footer class="footer">
+            <div class="organizers">
+                <div class="text-wrapper">ORGANIZERS</div>
+                <div class="frame">
+                    <img class="EKKSL-logo-removebg" src="img/ekksl-logo-removebg-preview-1.png" />
+                    <div class="vliskommunikatsiooni"></div>
+                </div>
+            </div>
+            <div class="div">
+                <div class="contact"><div class="text-wrapper-2">CONTACT</div></div>
+                <div class="frame-2">
+                    <div class="frame-3">
+                        <div class="frame-4">
+                            <img class="heroicons-outline" src="img/heroicons-outline-globe-alt.png" />
+                            <div class="text-wrapper-3">www.ekksl.ee</div>
+                        </div>
+                        <div class="frame-5">
+                            <img class="heroicons-outline" src="img/heroicons-outline-map-pin.png" />
+                            <div class="text-wrapper-3">Aardla 23b, Tartu</div>
+                        </div>
+                    </div>
+                    <div class="frame-6">
+                        <div class="frame-5">
+                            <div class="heroicons-solid-at"></div>
+                            <a href="mailto:tiit@ekksl.ee" target="_blank" rel="noopener noreferrer"
+                            ><div class="text-wrapper-4">tiit@ekksl.ee</div></a
+                            >
+                        </div>
+                        <div class="frame-7">
+                            <img class="heroicons-outline" src="img/heroicons-outline-phone-1.png" />
+                            <div class="text-wrapper-3">+372 56 111 866</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script type="text/javascript" src="carousel.js"></script>
 </body>
