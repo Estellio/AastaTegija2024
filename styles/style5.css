@@ -1,0 +1,45 @@
+/* CSS for the sponsors segment */
+
+.sponsors {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    padding-top: 50px;
+}
+
+.sponsors .group {
+    position: absolute;
+    width: 60%;
+    height: 400px;
+    margin-left: 200px;
+}
+
+.sponsors .text-wrapper_s {
+    position: absolute;
+    top: 0;
+    left: 172px;
+    font-family: "caveat", cursive;
+    font-weight: 400;
+    color: #000000;
+    font-size: 70px;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-left: 50px;
+}
+
+.sponsors .united-motors {
+    position: absolute;
+    top: 136px;
+    left: 350px;
+    padding-top: 60px;
+    padding-left: 100px;
+}
+
+.sponsors .image {
+    position: absolute;
+    top: 136px;
+    left: 0;
+    padding-left: 40px;
+    padding-top: 40px;
+    object-fit: cover;
+}
