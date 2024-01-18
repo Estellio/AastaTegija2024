@@ -1,27 +1,40 @@
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
 }
 
 /* Nav bar links */
-a {
+.nav_bar a {
     color: #f2f2f2;
     text-decoration: none;
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
+    padding-bottom: 20px;
+}
+
+/* Nav bar hovering */
+a:hover {
+    text-decoration: underline #f2f2f2;
 }
 
 /* Nav bar */
 .nav_bar {
     overflow: hidden;
     background-color: #010203;
-    height: 70px;
+    height: 90px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     padding-left: 20%;
     padding-right: 20%;
     padding-top:34px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
+
 /* Nav bar logo */
 .nav_bar img {
     margin-top: -27px;
@@ -29,7 +42,7 @@ a {
 }
 
 .slideshow {
-    margin-top: 0;
+    margin-top: 90px;
 }
 
 /* Slideshow container
@@ -44,15 +57,7 @@ a {
     display: none;
 }
 
-/* Number text (1/4) */
-.number_text {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
+/* Carousel slides fade */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -62,3 +67,167 @@ a {
     from {opacity: .77}
     to {opacity: 1}
 }
+
+#agenda {
+    padding-top: 100px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#agenda_box {
+    padding-top: 50px;
+    overflow: auto;
+}
+
+/* Lose dots from list */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Give half the schedule rows darker backgrounds */
+.dark-bg {
+    background-color: #F5F7FA;
+}
+
+.info a, #schedules_box, #agenda_days {
+    display: inline-block;
+    color: #000000;
+}
+
+/* Underline for location */
+.info a p {
+    text-decoration: underline #000000;
+}
+
+/* Make the time and place bigger */
+.info p {
+    font-size: 110%;
+    display: inline-block;
+}
+
+/* Schedule descriptions bigger and bold */
+h4 {
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 27px;
+    margin: 0;
+}
+
+/* Days selector to the left*/
+#agenda_days {
+    float: left;
+}
+
+/* Info to the left and description to the right */
+.info {
+    padding-left: 30px;
+    display: inline-block;
+}
+
+.desc {
+    float: right;
+    padding-right: 30px;
+    display: inline-block;
+}
+
+/* Adjust the schedules box width */
+#schedules_box {
+    width: 70%;
+    max-width: 1500px;
+}
+
+/* Days buttons to the left */
+#agenda_days {
+    width: 85px;
+    margin-left: 11%;
+    margin-right: 80px;
+    margin-top: 52px;
+}
+
+/* Make the days buttons */
+.day_button {
+    border: solid 1px black;
+    width: 150px;
+    padding: 7px 0px 10px 18px;
+    margin-bottom: 115px;
+    transform: rotate(-90deg);
+}
+
+.day_button a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0;
+}
+
+.info p, .info h2 {
+    margin: 10px;
+}
+
+.info h2 {
+    margin-left: 0;
+}
+
+.day_button h2, .day_button p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Info icons padding */
+i {
+    padding-right: 10px;
+}
+
+/* Day color in the day button */
+h2 {
+    color: #00B89D;
+}
+
+/* Strip button of all looks */
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.day_button:hover {
+    background-color: #00B89D;
+    border: solid 1px #00B89D;
+    padding: 7px 0px 10px 18px;
+}
+
+.day_button:hover h2 {
+    color: #FFFFFF;
+}
+
+/*.left {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+
+.right {
+    display: inline-block;
+    float: right;
+    padding: 10px;
+}
+
+.desc {
+    width: 300px;
+}
+
+.desc p {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}*/

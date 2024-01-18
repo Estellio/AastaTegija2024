@@ -1,0 +1,275 @@
+.index {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    padding-top: 50px;
+}
+
+.index .text-wrapper {
+    color: #000000;
+    font-family: "Montserrat", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 4.32px;
+    line-height: 16px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.index .sports-cubes {
+    margin-top: 48px;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 24px 80px;
+    top: 883px;
+    width: 100%;
+}
+
+.index .basketball {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url("img/Basketball.png"), lightgray 0px -12px / 100% 213.462% no-repeat;
+    transition: color 0s;
+    background-size: cover;
+    height: 208px;
+    width: 296px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    margin-right: 32px;
+}
+
+.index .basketball:hover {
+    box-shadow: inset 0 0 0 1000px rgba(219, 126, 6, 0.7);
+    background: url("img/Basketball.png") no-repeat center/cover;
+}
+
+.index .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica;
+    font-size: 40px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+.index .basketball:hover .text-wrapper-2 {
+    visibility: hidden;
+}
+
+.index .basketball:hover::before {
+    content: "basketball young men" "\A" "3x3 basketball birls" "\A" "3x3 basketball male staff" "\A" "3x3 basketball female staff";
+    white-space: pre-wrap;
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica;
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 216px;
+    height: 92px;
+}
+
+
+.index .basketball:hover::before {
+    visibility: visible;
+}
+
+.index .volleyball {
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url("img/Volleyball.png") no-repeat center/cover;
+    height: 208px;
+    width: 296px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-right: 32px;
+}
+
+.index .volleyball:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 125, 107, 0.7);
+    background: url("img/Volleyball.png") no-repeat center/cover;
+}
+
+.index .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica;
+    font-size: 40px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+.index .volleyball:hover .text-wrapper-3 {
+    visibility: hidden;
+}
+
+.index .volleyball:hover::before {
+    content: "volleyball young men" "\A" "volleyball girls";
+    white-space: pre-wrap;
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica;
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 174px;
+    height: 43px;
+}
+
+
+.index .volleyball:hover::before {
+    visibility: visible;
+}
+
+.index .table-tennis {
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url("img/Tabletennis.png") no-repeat center/cover;
+    height: 208px;
+    width: 296px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-right: 32px;
+}
+
+.index .table-tennis:hover {
+    background-image: url("img/Tabletennis.png");
+    box-shadow: inset 0 0 0 1000px rgba(0, 137, 207, 0.7);
+}
+
+.index .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica;
+    white-space: nowrap;
+    font-size: 40px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+.index .table-tennis:hover .text-wrapper-4 {
+    visibility: hidden;
+}
+
+.index .table-tennis:hover::before {
+    content: "table tennis young men" "\A" "table tennis girls" "\A" "table tennis male staff" "\A" "table tennis female staff";
+    white-space: pre-line;
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica;
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 197px;
+    height: 92px;
+}
+
+.index .table-tennis:hover::before {
+    visibility: visible;
+}
+
+
+.index .school-leaders {
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url("img/Schoolleaders.png") no-repeat center/cover;
+    height: 208px;
+    width: 296px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.index .school-leaders:hover {
+    background-size: cover;
+    background-image: url("img/Schoolleaders.png");
+    box-shadow: inset 0 0 0 1000px rgba(135, 0, 101, 0.7);
+}
+
+.index .school-leaders-2 {
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    visibility: visible;
+}
+
+.index .school-leaders:hover .school-leaders-2 {
+    visibility: hidden;
+}
+
+.index .school-leaders:hover::before {
+    content: "school leader’s triathlon" "\A" "darts" "\A" "basketball free throws" "\A" "3rd game TBA";
+    white-space: pre-line;
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica;
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 195px;
+    height: 92px;
+}
+
+.index .school-leaders:hover::before {
+    visibility: visible;
+}

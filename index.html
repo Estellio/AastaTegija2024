@@ -4,38 +4,220 @@
     <meta charset="UTF-8">
     <title>Balti Mängud 2024</title>
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="style2.css" type="text/css"/>
+    <link rel="stylesheet" href="style3.css" type="text/css"/>
+    <link type="text/javascript" href="showAgenda.js" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e1172c922a.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            -webkit-font-smoothing: antialiased;
+            box-sizing: border-box;
+        }
+        html,
+        body {
+            margin: 0px;
+            height: 100%;
+        }
+        /* a blue color as a generic focus style */
+        button:focus-visible {
+            outline: 2px solid #4a90e2 !important;
+            outline: -webkit-focus-ring-color auto 5px !important;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div class="nav_bar">
         <!-- navigation bar -->
         <a href="#agenda">Agenda</a>
         <a href="#history">History</a>
-        <img src="pildid/img.png" alt="Logo">
+        <img src="pics/img.png" alt="Logo">
         <a href="#sponsors">Sponsors</a>
         <a href="#contact">Contact</a>
     </div>
 
     <div class="slideshow">
-        <!-- Full-width images with number and caption text -->
+        <!-- Auto rotating carousel -->
         <div class="mySlides fade">
-            <img src="pildid/Bänner%204.png" style="width:100%">
+            <img src="pics/banner1.png" style="width:100%">
         </div>
 
         <div class="mySlides fade">
-            <img src="pildid/Bänner%203.png" style="width:100%">
+            <img src="pics/banner2.png" style="width:100%">
         </div>
 
         <div class="mySlides fade">
-            <img src="pildid/Bänner%202.png" style="width:100%">
+            <img src="pics/banner3.png" style="width:100%">
         </div>
 
         <div class="mySlides fade">
-            <img src="pildid/Bänner%205.png" style="width:100%">
+            <img src="pics/banner4.png" style="width:100%">
         </div>
     </div>
+
+    <div class="index">
+        <div class="div">
+            <div class="sports-cubes">
+                <div class="basketball" id="basketball">
+                    <div class="text-wrapper-2">Basketball</div>
+                </div>
+                <div class="volleyball" id="volleyball">
+                    <div class="text-wrapper-3">Volleyball</div>
+                </div>
+                <div class="table-tennis" id="table-tennis">
+                    <div class="text-wrapper-4">Table tennis</div>
+                </div>
+                <div class="school-leaders" id="school-leaders">
+                    <div class="school-leaders-2">School leaders&#39; triathlon</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="agenda">
+        <h1>Agenda</h1>
+        <div id="agenda_box">
+            <div id="agenda_days">
+                <ul>
+                    <li id="day_1" class="day_button">
+                        <button>
+                            <h2>1st Day</h2>
+                            <p>April 25, 2024</p>
+                        </button>
+                    </li>
+                    <li id="day_2" class="day_button">
+                        <button onclick="show2ndDay()" type="button">
+                            <h2>2nd Day</h2>
+                            <p>April 26, 2024</p>
+                        </button>
+                    </li>
+                    <li id="day_3" class="day_button">
+                        <button>
+                            <h2>3rd Day</h2>
+                            <p>April 27, 2024</p>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="schedules_box">
+                <div id="schedule_d1">
+                    <div class="activity dark-bg">
+                        <div class="info">
+                            <i class="fa-solid fa-clock fa-lg"></i>
+                            <p>13.00-15.00</p><br>
+                            <i class="fa-solid fa-location-dot fa-lg"></i>
+                            <a href="https://maps.app.goo.gl/8UqVgiqJUC4vKfXW9" target=”_blank”><p>Tartu VOCO, Kopli 1a, Tartu</p></a>
+                        </div>
+                        <div class="desc">
+                            <h4>Arrival of national delegations</h4>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="info">
+                            <i class="fa-solid fa-clock fa-lg"></i>
+                            <p>15.00-16.30</p><br>
+                            <i class="fa-solid fa-location-dot fa-lg"></i>
+                            <a href="https://maps.app.goo.gl/8UqVgiqJUC4vKfXW9" target=”_blank”><p>Tartu VOCO, Kopli 1a, Tartu</p></a>
+                        </div>
+                        <div class="desc">
+                            <h4>Lunch</h4>
+                        </div>
+                    </div>
+                    <div class="activity dark-bg">
+                        <div class="info">
+                            <i class="fa-solid fa-clock fa-lg"></i>
+                            <p>16.00-16.30</p><br>
+                            <i class="fa-solid fa-location-dot fa-lg"></i>
+                            <a href="https://maps.app.goo.gl/8UqVgiqJUC4vKfXW9" target=”_blank”><p>Tartu VOCO, Kopli 1a, Tartu</p></a>
+                        </div>
+                        <div class="desc">
+                            <h4>Delegation leaders meeting</h4>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="info">
+                            <i class="fa-solid fa-clock fa-lg"></i>
+                            <p>18.00-19.00</p><br>
+                            <i class="fa-solid fa-location-dot fa-lg"></i>
+                            <a href="https://maps.app.goo.gl/nK4hsCuBvBSLWvnB7" target=”_blank”><p>Estonian National Museum, Muuseumi tee 2, Tartu</p></a>
+                        </div>
+                        <div class="desc">
+                            <h4>Opening ceremony</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="schedule_d2" style="display: none">
+                    <div class="activity dark-bg">
+                        <div class="info">
+                            <i class="fa-solid fa-clock fa-lg"></i>
+                            <p>7.30-9.00</p><br>
+                            <i class="fa-solid fa-location-dot fa-lg"></i>
+                            <a href="https://maps.app.goo.gl/8UqVgiqJUC4vKfXW9"><p>Tartu VOCO, Kopli 1a, Tartu</p></a>
+                        </div>
+                        <div class="desc">
+                            <h4>Breakfast</h4>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="info">
+                            <i class="fa-solid fa-clock fa-lg"></i>
+                            <p>9.30-11.00</p><br>
+                            <h2><span style="color: #00B89D">Volleyball</span> Young Women</h2>
+                            <i class="fa-solid fa-location-dot fa-lg"></i>
+                            <a href="https://maps.app.goo.gl/Yk6rub5TdVuBhwzb7"><p>Variku SPorts Hall</p></a>
+                        </div>
+                        <div class="desc">
+                            <img src="pics/Country=Eesti.png" class="left">
+                            <p>VS</p>
+                            <img src="pics/Country=Läti.png" class="right">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="schedule_d3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="history">
+        <div class="backgroun">
+            <h1 class="heading--text">HISTORY</h1>
+            <img src="pics/VOCO%20logo.png" align="right" height="397" width="546"/>
+            <div class = "box">
+                <p class="paragraph--texts1">
+                    The journey competitions began in Dune Cesis. 1993 The aim during was the clear Latvian to promote vocational athletic education growth
+                    club strengthen bonds among students, educators, institutions, and management across
+                    Estonia, Latvia, and Lithuania.
+                </p>
+                <p class="paragraph--texts2">
+                    Estonian and Lithuanian negotiations led to the inaugural Baltic States Sports Games
+                    in Riga in November 1993, featuring basketball and table tennis. Despite challenges,
+                    collaboration with the Ministry of Education and local institutes ensured the event's
+                    success, establishing an annual tradition.
+                </p>
+                <p class="paragraph--texts3">
+                    Fast forward to 2024 and the tradition lives on. XXIX Baltic Games will be hosted in the
+                    vibrant city of Tartu, Estonia, showcasing a variety of sports including basketball,
+                    volleyball, table tennis, and the unique school principals' triathlon. This marks a
+                    significant milestone in the event's history, as it has evolved from its humble
+                    beginnings in Cesis into a thriving legacy that symbolizes the enduring unity and
+                    sportsmanship of Baltic vocational education.
+                </p>
+            </div>
+            <div class="link">
+                <a href="https://ekksl.ee/baltimangud/ajaluguhistory/" target="_blank" class="link">Read more</a>
+            </div>
+        </div>
+        <div/>
 
     <script type="text/javascript" src="carousel.js"></script>
 </body>
